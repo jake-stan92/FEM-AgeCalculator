@@ -4,17 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main>
+    <main class="wrapper">
       <div class="age-container">
         <form action="">
-          <label for="day">DAY</label>
-          <input id="day-input" type="number" name="day" max="31" />
-          <label for="month">MONTH</label>
-          <input id="month-input" type="number" name="month" max="12" />
-          <label for="year">YEAR</label>
-          <input id="year-input" type="number" name="year" />
+          <div class="date_input">
+          <label for="day-input">DAY</label>
+          <input id="day-input" class="input_field" type="number" name="day" max="31" />
+          </div>
+          <div class="date_input">
+          <label for="month-input">MONTH</label>
+          <input id="month-input" type="number" class="input_field" name="month" max="12" />
+          </div>
+          <div class="date_input">
+          <label for="year-input">YEAR</label>
+          <input id="year-input" class="input_field" type="number" name="year" />
+          </div>
           <button type="button">SUBMIT</button>
         </form>
         <div class="output-container">
@@ -33,5 +40,6 @@
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

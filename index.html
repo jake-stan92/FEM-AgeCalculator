@@ -4,25 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="wrapper">
       <div class="age-container">
         <form action="">
-          <div class="date_input">
-          <label for="day-input">DAY</label>
-          <input id="day-input" class="input_field" type="number" name="day" max="31" />
+          <div class="date_input_container">
+            <div class="date_input">
+              <label for="day-input">DAY</label>
+              <input
+                id="day-input"
+                class="input_field"
+                type="number"
+                name="day"
+                max="31"
+              />
+            </div>
+            <div class="date_input">
+              <label for="month-input">MONTH</label>
+              <input
+                id="month-input"
+                type="number"
+                class="input_field"
+                name="month"
+                max="12"
+              />
+            </div>
+            <div class="date_input">
+              <label for="year-input">YEAR</label>
+              <input
+                id="year-input"
+                class="input_field"
+                type="number"
+                name="year"
+              />
+            </div>
           </div>
-          <div class="date_input">
-          <label for="month-input">MONTH</label>
-          <input id="month-input" type="number" class="input_field" name="month" max="12" />
-          </div>
-          <div class="date_input">
-          <label for="year-input">YEAR</label>
-          <input id="year-input" class="input_field" type="number" name="year" />
-          </div>
-          <button type="button">SUBMIT</button>
+          <button type="button">
+            <div class="circle-bg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 46 44"
+              >
+                <g fill="none" stroke="#FFF" stroke-width="3">
+                  <path
+                    d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+                  />
+                </g>
+              </svg>
+            </div>
+          </button>
         </form>
         <div class="output-container">
           <div class="years">

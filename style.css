@@ -3,37 +3,95 @@
 *,
 *:after,
 *:before {
-	box-sizing : border-box;
-	margin     : 0;
-	padding    : 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family : "Poppins", sans-serif;
-	font-weight : 400;
-	font-style  : normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .wrapper {
-	width       : 100vw;
-	height      : 100vh;
-	display     : grid;
-	place-items : start;
-	background  : #F0F0F0;
-	padding     : 4rem 0.75rem;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: start;
+  background: #f0f0f0;
+  padding: 4rem 0.75rem;
 }
 
 .age-container {
-	width         : 100%;
-	padding       : 3rem 1.5rem;
-	background    : #FFF;
-	border-radius : 1rem 1rem 5rem 1rem;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  background: #fff;
+  border-radius: 1rem 1rem 5rem 1rem;
 }
 
 .input_field {
-	font: inherit;
-	font-weight : 700;
-	font-size : 1.8rem;
-	width     : 100%;
-	padding   : 0.75rem;
+  font: inherit;
+  font-weight: 700;
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+}
+
+.date_input_container {
+  display: flex;
+  gap: 1rem;
+}
+
+.circle-bg {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  background-color: rgb(135, 76, 252);
+  padding: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+form {
+  border-bottom: 1px solid lightgray;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+label {
+  color: rgb(130, 130, 130);
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-size: 0.85rem;
+}
+
+.output-container {
+  margin-top: 4rem;
+}
+
+.years,
+.months,
+.days {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.output-container span {
+  color: rgb(135, 76, 252);
 }
